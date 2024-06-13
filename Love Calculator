@@ -1,0 +1,25 @@
+#love calculator
+His_name=input("Enter His Name:")
+Her_name=input("Enter Her Name:")
+combine_name_lower_Case=His_name.lower( )+Her_name.lower( )
+t=combine_name_lower_Case.count('t')
+r=combine_name_lower_Case.count('r')
+u=combine_name_lower_Case.count('u')
+e=combine_name_lower_Case.count('e')
+
+true=t+r+u+e
+
+l=combine_name_lower_Case.count('l')
+o=combine_name_lower_Case.count('o')
+v=combine_name_lower_Case.count('v')
+e=combine_name_lower_Case.count('e')
+
+love=l+o+v+e
+
+calculation=int(str(true)+str(love))
+if calculation<10 or calculation>90:
+  print(f"your love score is{calculation} and you go together like coke and mentos")
+elif calculation>=40 and calculation<=50:
+  print(f"your love score is{calculation} and you are alright together")
+else:
+  print(f'Your love score is {calculation}')
