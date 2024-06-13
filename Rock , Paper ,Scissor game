@@ -1,0 +1,21 @@
+#Rock , Paper ,Scissor game
+Rock="🪨"
+Paper ="📃"
+Scissor="✂️"
+
+#we can map by using dictionary
+mapping={0:Rock , 1:Paper ,2:Scissor}
+
+import random
+Person=int(input("Enter the Choice 0:🪨 , 1:📃, 2:✂️\n"))
+Computer = random.randint(0,2)
+print(f"Computer Choice is:-{Computer}")
+
+if Person==Computer:
+  print("Draw")
+elif (Person==0 and Computer==2) or (Person==1 and Computer==0) or (Person==2 and Computer==1):
+  print("You Win!!!")
+elif (Person==0 and Computer==1) or (Person==1 and Computer==2) or (Person==2 and Computer==0):
+  print("You Lose!!!!")
+else:
+  print("Invalid Choice!!!!")
